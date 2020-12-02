@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/txt_nombreAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp"
+                android:hint="Nombre Animal" />
+
+            <EditText
+                android:id="@+id/txt_estadoConservacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp"
+                android:hint="Estado de conservacion" />
+
+            <EditText
+                android:id="@+id/txt_evolucionAnterior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp"
+                android:hint="Evolucion anterior" />
+
+            <EditText
+                android:id="@+id/txt_locacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp"
+                android:hint="Locacion" />
+
+
+            <EditText
+                android:id="@+id/txt_longitudAproximada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp"
+                android:hint="Longitud Aproximada" />
+
+            <EditText
+                android:id="@+id/txt_pesoAproximado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp"
+                android:hint="Peso Aproximado" />
+
+            <EditText
+                android:id="@+id/txt_anatomia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textLongMessage"
+                android:paddingTop="15dp"
+                android:hint="Anatomia" />
+
+            <EditText
+                android:id="@+id/txt_diformismo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textLongMessage"
+                android:paddingTop="15dp"
+                android:hint="Diformismo" />
+
+            <EditText
+                android:id="@+id/txt_elementoBios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="15dp"
+                android:hint="Elemento Bios" />
+
+            <EditText
+                android:id="@+id/txt_dieta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textLongMessage"
+                android:paddingTop="15dp"
+                android:hint="Dieta" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="30dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Animales Registrados" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generar QR Code"
+                android:id="@+id/generate_qr_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descargar imagen"
+                android:id="@+id/download_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <ListView
+                android:id="@+id/lv_datosAnimales"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
